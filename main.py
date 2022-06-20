@@ -18,9 +18,9 @@ url=requests.get('https://www.sbs.gob.pe/app/pp/SISTIP_PORTAL/Paginas/Publicacio
 class TipoCambio:
     def __init__(self,window):
         self.wind=window
-        self.wind.title("Tipos de Cambio")
+        self.wind.title("Tipos de Cambio de la SBS")
         self.wind.geometry(str(ANCHO)+'x'+str(ALTO))
-        self.wind.configure(bg='#49A')
+
 
         #Boton Importar
         btnImportar=Button(text='Importar tipos de cambio',command=self.scrappingTipoCambio)
